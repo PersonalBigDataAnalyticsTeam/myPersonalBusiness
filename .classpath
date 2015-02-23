@@ -53,5 +53,11 @@
 	<classpathentry kind="lib" path="/usr/share/hadoop/hadoop-ant-1.2.1.jar"/>
 	<classpathentry kind="lib" path="/usr/share/hadoop/hadoop-core-1.2.1.jar"/>
 	<classpathentry kind="lib" path="/home/solinari/workspace/myPersonalBusiness/lib/dbconnector/mysql-connector-java-5.1.32-bin.jar"/>
+	<classpathentry kind="lib" path="lib/hbase/guava-11.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/hbase/hbase-0.94.20-tests.jar"/>
+	<classpathentry kind="lib" path="lib/hbase/hbase-0.94.20.jar"/>
+	<classpathentry kind="lib" path="lib/hbase/protobuf-java-2.4.0a.jar"/>
+	<classpathentry kind="lib" path="lib/hbase/zookeeper-3.4.5.jar"/>
+	<classpathentry kind="lib" path="lib/MSOffice/word/poi-bin-3.10-FINAL-20140208.tar.gz"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
