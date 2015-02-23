@@ -52,5 +52,6 @@
 	<classpathentry kind="lib" path="/usr/share/hadoop/hadoop-minicluster-1.2.1.jar"/>
 	<classpathentry kind="lib" path="/usr/share/hadoop/hadoop-ant-1.2.1.jar"/>
 	<classpathentry kind="lib" path="/usr/share/hadoop/hadoop-core-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/solinari/workspace/myPersonalBusiness/lib/dbconnector/mysql-connector-java-5.1.32-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
