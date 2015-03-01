@@ -58,24 +58,24 @@ public class Monitor {
 		}*/
 	}
 
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		//runCollector();
-		runHistoryCollector();
-		/*
-		StockInfoData sid = new StockInfoData();
-		ArrayList <String> array = sid.getStocksInfo(0, 10);
-		if (array != null){
-			runHistoryCollector();
-
-			for (String s : array){
-				System.out.println(s);
-				
-			}
-		}*/
-
-
-	}
+//	public static void main(String[] args) throws Exception {
+//		// TODO Auto-generated method stub
+//		//runCollector();
+//		runHistoryCollector();
+//		/*
+//		StockInfoData sid = new StockInfoData();
+//		ArrayList <String> array = sid.getStocksInfo(0, 10);
+//		if (array != null){
+//			runHistoryCollector();
+//
+//			for (String s : array){
+//				System.out.println(s);
+//				
+//			}
+//		}*/
+//
+//
+//	}
 	
 
 }
