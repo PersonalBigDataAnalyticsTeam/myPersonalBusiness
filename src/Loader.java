@@ -11,7 +11,8 @@ import java.util.Map;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Strings;
 import org.apache.hadoop.mapreduce.Job;
-import org.solinari.dataEngine.*;
+import org.solinari.analyzer.DataCollector;
+import org.solinari.analyzer.engine.*;
 
 /**
  * @author solinari
@@ -25,9 +26,7 @@ public class Loader {
 	 * @throws Exception 
 	 */
 
-	
-	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
+	public static void loadHbaseMapReduce() throws Exception{
 		String jobName = "InputDriver";
 		String srcTable = "sh600292_history";
 		String dstTable = "nonetable";
@@ -42,13 +41,24 @@ public class Loader {
 		
 		Configuration conf = new Configuration();
 		Job job = new Job(conf, jobName);
-		Engine inputDriver = EngineFactory.getInputDriver(job.getConfiguration());
+		Engine engine = EngineFactory.getInputDriver(job.getConfiguration());
 //		inputDriver.search(jobargs, searchColumns, SearchMapper.class, null);
 //		inputDriver.setMapClazz(SearchMapper1.class);
-		inputDriver.setMapClazz(Abc.class);
-		inputDriver.setReduceClazz(SearchReducer.class);
-		inputDriver.search(jobargs, searchColumns);
-
+		engine.setMapClazz(test.ModifiedMapper.class);
+		engine.setReduceClazz(test.ModifiedReducer.class);
+		engine.run(jobargs, searchColumns);
+	}
+	
+	public static void loadDataCollector(){
+		DataCollector monitor = new DataCollector();
+		monitor.runHistoryCollector();
+//		monitor.runCollector();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+//		loadHbaseMapReduce();
+		loadDataCollector();
 		
 	}
 
