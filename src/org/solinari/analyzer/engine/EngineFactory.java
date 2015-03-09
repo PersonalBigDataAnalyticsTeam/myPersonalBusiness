@@ -5,7 +5,7 @@ package org.solinari.analyzer.engine;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.log4j.Logger;
-import org.solinari.data.format.SinaHistoryStockDataFormatFactory;
+import org.solinari.data.formater.SinaHistoryStockDataFormatFactory;
 
 /**
  * @author solinari

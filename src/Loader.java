@@ -11,8 +11,8 @@ import java.util.Map;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Strings;
 import org.apache.hadoop.mapreduce.Job;
-import org.solinari.analyzer.DataCollector;
 import org.solinari.analyzer.engine.*;
+import org.solinari.data.collector.DataCollector;
 
 /**
  * @author solinari

@@ -123,7 +123,7 @@ public class MySqlDriver {
     		
 		try {
 			Connection conn = DriverManager.getConnection(url, user, pwd);
-		  
+
 			Statement stmt = conn.createStatement();
 //			String tableName = "codeInfo";
 			String sql = "select * from " + DBNAME + "." + STOCK_CODE_TABLE + " where id >= " + startIndex + " and id < " + endIndex;
