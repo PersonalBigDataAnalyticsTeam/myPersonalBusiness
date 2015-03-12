@@ -28,7 +28,8 @@ public class Loader {
 
 	public static void loadHbaseMapReduce() throws Exception{
 		String jobName = "InputDriver";
-		String srcTable = "sh600292_history";
+//		String srcTable = "sh600292_history";
+		String srcTable = "sh600016_history";
 		String dstTable = "nonetable";
 		String[] jobargs = {jobName, srcTable, dstTable};
 		HashMap searchColumns = new HashMap();
@@ -57,8 +58,8 @@ public class Loader {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-//		loadHbaseMapReduce();
-		loadDataCollector();
+		loadHbaseMapReduce();
+//		loadDataCollector();
 		
 	}
 
